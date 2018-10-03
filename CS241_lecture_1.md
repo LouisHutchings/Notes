@@ -53,5 +53,70 @@ Key elements:
 > A structured set of protocols that implement the
 communication function (layers)
 
-Protocols are layered to form a [hierarchy](), with a simple interface between each layer.
+Protocols are layered to form a hierarchy, with a simple interface between each layer.
 ![protocol hierarchy](Images/pHierarchy.JPG)
+> Layered protocols provide an
+abstraction
+ from unnecessary complications by hiding low-level details.
+
+ A layer K provides a **service** to the layer K+1 and is a **user** of layer K-1.
+
+ Data Units (DUs) may be too big or small for communication so DUs may have to be segmented or
+ concatenated.
+
+### Connection-Oriented and Connectionless services
+
+* **Connection-Oriented**
+: connection established, data transferred, connection
+released. (cf. telephone system)
+* **Connectionless**
+: each message (or packet) carries full destination address, and
+is routed through the network (delays and reordering possible).
+
+Transmission may be **full-duplex**, data flows two ways at any given time, or **half-duplex**, data flows one way at any given time but overall flows both ways.
+
+### OSI Reference Model
+![osi](Images/osi.png)
+
+1. **Physical layer** - The bottom layer,
+responsible for transporting bits of information. Bandwidth,
+signal levels, signal coding methods are specified at this level.
+
+2. **Data Link** - Provides frames (PDUs) which give addressing, error control and
+sequencing, necessary to provide a reliable service.
+
+3. **Network** - Highest layer within the communication subnet, deals with control issues like
+routing, congestion control and error recovery.
+
+4. **Transport**  - can be connection-oriented or connectionless
+  * In the connectionless case, each PDU is transmitted independently through the network;
+there is no connection establishment or release.
+  * In a connection-oriented service, the transport layer negotiates a suitable quality of
+service for the given network & application. This typically includes throughput, transit
+delay, error rate, failure rate, etc.
+
+5. **Session** - designed to manage an entire conversation, consisting of a number of dialogue
+units (such as file transfer) which can be suspended and restarted through synchronisation
+points.
+
+6. **Presentation** - provides a set of data transformation services including character conversion,
+data compression and data encryption.
+
+7. **Application** - the layer where user’s programs live. In addition to user specified programs,
+there are common applications such as FTP, Telnet (virtual terminal), e-mail, etc.
+
+Each layer represents a different level of abstractionperforms clearly defined function;
+minimal interface to other layers.
+
+**Criticisms**
+* Bad technology: some layers have little use in most applications (in particular the session and presentation layers)
+* Bad implementations: enormous complexity resulted in large & slow systems
+* Bad Timing: Competing TCP/IP (Internet) protocols in use by research universities by the
+time the OSI standard approved.
+*  Bad politics: Many people (especially in academia) viewed TCP/IP as part of UNIX and
+OSI as belonging to
+ European telecommunication organisations
+
+### TCP/IP Reference Model
+![tcp](Images/osiVsTcp.jpg)
+Developed 10 years before OSI. Applications are usually based on the client-server model.
