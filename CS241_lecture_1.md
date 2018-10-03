@@ -1,4 +1,4 @@
-# CS241 lecture 1
+# CS241 Networking lecture 1
 *2/10/2018*
 ___
 ### What is a Computer Network?
@@ -119,4 +119,5 @@ OSI as belonging to
 
 ### TCP/IP Reference Model
 ![tcp](Images/osiVsTcp.jpg)
+
 Developed 10 years before OSI. Applications are usually based on the client-server model.
