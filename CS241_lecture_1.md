@@ -15,13 +15,13 @@ Common ways to classify networks are by:
 
 There are two main classifications of transmission technology.
 * broadcast links (generally for localised networks)
- * a single, shared communication channel
- * short messages (packets) are recieved by all but are ignored by everyone except the user to which they are addressed
- * This is [multicasting](https://en.wikipedia.org/wiki/Multicast) by appropriate addressing
+  * a single, shared communication channel
+  * short messages (packets) are recieved by all but are ignored by everyone except the user to which they are addressed
+  * This is [multicasting](https://en.wikipedia.org/wiki/Multicast) by appropriate addressing
 * point-to-point links (generally for larger networks)
- * connections between individual machines
- * This is [unicasting](https://en.wikipedia.org/wiki/Unicast)
- * routing algorithms required
+  * connections between individual machines
+  * This is [unicasting](https://en.wikipedia.org/wiki/Unicast)
+  * routing algorithms required
 
 **Scale**
 
@@ -52,3 +52,6 @@ Key elements:
 ### What is network architecture?
 > A structured set of protocols that implement the
 communication function (layers)
+
+Protocols are layered to form a [hierarchy](), with a simple interface between each layer.
+![protocol hierarchy](Images/pHierarchy.JPG)
