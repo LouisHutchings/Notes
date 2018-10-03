@@ -1,6 +1,6 @@
 # CS241 lecture 1
 *2/10/2018*
----
+___
 ### What is a Computer Network?
 > An interconnected collection of two or more autonomous computers.
 
@@ -37,4 +37,18 @@ There are five main classifications of network scale.
   * An example of this would be a cable tv network
 * Wide Area Network (WANs)
   * A network that covers anywhere from a country or a continent
-  * This is often done by connecting many LANs to a subnet
+  * This is often done by connecting many LANs to a subnet (usually [packet-switched](https://en.wikipedia.org/wiki/Packet_switching)) using routers
+* The internet
+ * covers the entire planet
+
+### What is a protocol?
+> A set of rules governing the exchange of data between two entities.
+
+Key elements:
+* Syntax (e.g data format and signal levels)
+* Semantics (Control information for co-ordination and error handling)
+* Timing
+
+### What is network architecture?
+> A structured set of protocols that implement the
+communication function (layers)
