@@ -1,6 +1,6 @@
 # CS241 Networking lecture 1
 *2/10/2018*
-___
+
 ### What is a Computer Network?
 > An interconnected collection of two or more autonomous computers.
 
@@ -121,3 +121,10 @@ OSI as belonging to
 ![tcp](Images/osiVsTcp.jpg)
 
 Developed 10 years before OSI. Applications are usually based on the client-server model.
+
+### Use of Metric Units
+For **data communication** k = 1000 = 10<sup>3</sup>, M = 1,000,000 = 10<sup>6</sup>
+
+For **storage** k = 1024 = 2<sup>10</sup>. M = 1,048,576 = 2<sup>20</sup>
+
+This means that 1kB transmitted over a 1kBps channel takes 1.024s, not 1s.
