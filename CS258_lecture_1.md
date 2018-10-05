@@ -67,7 +67,7 @@ A **database** is a collection of relations. A **database schema** is a set of a
 * It's an **abstract model** but has been enriched with declrative programming laguages such as SQL.
 * The abstract relational model is **set-oriented**. (SQL is based on "bags"(multisets), sets are not the same as bags).
 
-### Relational database constrains
+### Relational database constraints
 There are three constraints for R-DBMs (excluding domain constraints).
 1. **Key constraints**
   * Superkey of R: a subset of attributes of R, SK, such that in any valid state for r(R), for any two distinct tuples t1 and t2 in r(R), t1[SK] ≠ t2[SK]
