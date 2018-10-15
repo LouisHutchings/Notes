@@ -51,3 +51,7 @@ struct
 return 0;  
 }
 ```
+Bit Fields allow
+
+### Pointers
+> A pointer is a variable that holds a memory address
